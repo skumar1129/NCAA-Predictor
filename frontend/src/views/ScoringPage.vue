@@ -4,7 +4,7 @@
             <img class="img-fluid mb-2" src="../assets/final_four_pic.jpg">
             <form>
                  <h1 class="display-5">Choose the Value of each metric for the Teams</h1>
-                 <div class="row">
+                 <div class="row" id="comps">
                     <Scoring1 v-on:score1="setScore1" class="comp1" />
                     <Scoring2 v-on:score2="setScore2" class="comp2" />
                  </div>
@@ -56,7 +56,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
     #bot {
         height: 25rem;
         width: 50rem;
@@ -64,7 +64,7 @@ export default {
     .label {
         font-size: xx-large;
     }
-    .row {
+    #comps {
         display: flex;
         justify-content: center;
     }
