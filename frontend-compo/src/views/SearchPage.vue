@@ -12,11 +12,11 @@
     </div>
 </template>
 
-<script>
+<script lang='ts'>
 import Search1 from '../components/Search1.vue';
 import Search2 from '../components/Search2.vue';
-import { ref } from '@vue/composition-api';
-export default {
+import { ref, defineComponent } from '@vue/composition-api';
+export default defineComponent({
     name: "SearchPage",
     components: {
         Search1,
@@ -63,7 +63,7 @@ export default {
     //         this.$router.push({ name: 'Scoring'});
     //     }
     // }
-};
+});
 </script>
 
 <style>

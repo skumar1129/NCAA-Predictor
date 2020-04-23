@@ -21,22 +21,22 @@
     </div>
 </template>
 
-<script>
+<script lang='ts'>
 import Scoring1 from '../components/Scoring1.vue';
 import Scoring2 from '../components/Scoring2.vue';
-import { ref, computed } from '@vue/composition-api';
+import { ref, computed, defineComponent } from '@vue/composition-api';
 
-export default {
+export default defineComponent({
     name: "Scoring",
     components: {
         Scoring1,
         Scoring2
     },
     setup(props, context) {
-        const score1 = ref(0);
-        const score2 = ref(0);
-        const team1 = computed(() => context.root.$store.getters.getTeam1.teamName);
-        const team2 = computed(() => context.root.$store.getters.getTeam2.teamName);
+        const score1: number = ref(0);
+        const score2: number = ref(0);
+        const team1: string = computed(() => context.root.$store.getters.getTeam1.teamName);
+        const team2: string = computed(() => context.root.$store.getters.getTeam2.teamName);
         function setScore1(newValue) {
             score1.value = newValue.toFixed(20);
         }
@@ -67,7 +67,7 @@ export default {
     //          this.score2 = value.toFixed(20);
     //      }  
     // }
-};
+});
 </script>
 
 <style scoped>

@@ -16,7 +16,7 @@
            <Stat12 v-on:stat12="newStat12" />
            <Stat13 v-on:stat13="newStat13" />
            <Stat14 v-on:stat14="newStat14" />
-            <button @click="calculateScore" class="btn btn-primary">Get Score</button>
+           <button type="button" @click="calculateScore" class="btn btn-primary">Get Score</button>
        
     </div>
 </template>
