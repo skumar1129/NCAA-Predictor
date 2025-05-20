@@ -3,8 +3,8 @@ This project was used to get ready for professional work where I would be using 
 
 ## Tech Stack / Folder Explanation
 python: webscraper script that uses python/beatifulsoup to grab advanced analytics data
-frontend: Vue application
-frontend-compo: Vue application that utilizes the composition api
+frontend: Vue application using typescript
+frontend-compo: Vue application that utilizes the composition api and typescript
 backend: Java Spring Boot application to query mongodb instance
 data: the Json file used to populate the mongodb instance
 backend-store: A local mongodb instance
